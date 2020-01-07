@@ -61,3 +61,20 @@ button{
 
     background-color:#5da6ff;
 }
+
+.highlighted {
+    line-height: 1.1em;
+    display: inline-block;
+  }
+  .highlighted-red {
+    color: #fd1015;
+    background: rgba(253,16,21,.1);
+}
+
+.highlighted {
+    padding: 2px 15px 4px;
+    font-style: normal;
+    border-radius: 3px;
+}
+
+
