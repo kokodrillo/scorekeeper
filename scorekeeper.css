@@ -7,6 +7,8 @@
   margin: 0 auto;
   margin-top: 40px;
   border-radius: 10px;
+  box-shadow: 1px 1px 18px #beccc6;
+  background-image: url("image/lines.png");
 }
 
 .inside_container, h1, p{
@@ -24,7 +26,7 @@ p{
 }
 
 .title{
-  color: #77efbb;
+  color: white;
   text-shadow: 3px 2px #7b8882;
   letter-spacing: 0.7px;
 }
