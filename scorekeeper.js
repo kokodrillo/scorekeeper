@@ -33,8 +33,9 @@ gameOver = false;
 })
 
 inputNum.addEventListener('change', function(){
-winningScoreDisplay.textContent = this.value;
-winningScore = Number(this.value);
+winningScoreDisplay.textContent = this.value; //.value gets the value of a variable, number, boolean exc.
+winningScore = Number(this.value); // .this in function: -refers to global object
+                                        // in eventListeners: -element that recieved the event
 reset();
 });
 
@@ -43,13 +44,9 @@ function reset(){
   p2Score = 0;
   p1Display.textContent = 0;
   p2Display.textContent = 0;
-  p1Display.classList.remove("winner");
+  p1Display.classList.remove("winner"); //classList to manipulate class list, access to element's list
   p2Display.classList.remove("winner");
   gameOver = false;
 }
 
-function clamp(val, min, max) {
-    return val > max ? max : val < min ? min : val;
-}
 
-winningScoreDisplay = clamp(winningScoreDisplay, 1, 100);
