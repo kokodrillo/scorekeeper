@@ -6,17 +6,24 @@
 </head>
 
 <body>
-  <h1>Scorekeeper</h1>
-  <h1><span id="display1">0</span> to <span id="display2">0</span></h1>
+  <div class="container">
+    <div clss="inner_content">
+      <img src="lines.png">
+      <h1 class="title">Scorekeeper</h1>
+      <h1><span id="display1">0</span> : <span id="display2">0</span></h1>
 
-  <p>Playing till: <span></span></p>
-  <input type="number" min="1" max="50">
+      <p>Playing till: <span></span></p>
 
-  <button id="p1">Player One</button>
-  <button id="p2">Player Two</button>
-  <button id="reset">Reset</button>
+        <div class="inside_container">
+          <input type="number" min="1" max="50">
 
-<script src="scorekeeper.js"></script>
-</body>
+          <button id="p1">Player One</button>
+          <button id="p2">Player Two</button>
+          <button id="reset">Reset</button>
+        </div>
+    </div>
+  </div>
 
+    <script src="scorekeeper.js"></script>
+    </body>
 </html>
