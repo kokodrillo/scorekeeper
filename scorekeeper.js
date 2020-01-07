@@ -33,5 +33,23 @@ gameOver = false;
 })
 
 inputNum.addEventListener('change', function(){
-winningScoreDisplay = Number(inputNum.value);
-})
+winningScoreDisplay.textContent = this.value;
+winningScore = Number(this.value);
+reset();
+});
+
+function reset(){
+  p1Score = 0;
+  p2Score = 0;
+  p1Display.textContent = 0;
+  p2Display.textContent = 0;
+  p1Display.classList.remove("winner");
+  p2Display.classList.remove("winner");
+  gameOver = false;
+}
+
+function clamp(val, min, max) {
+    return val > max ? max : val < min ? min : val;
+}
+
+winningScoreDisplay = clamp(winningScoreDisplay, 1, 100);
