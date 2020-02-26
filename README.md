@@ -1,2 +1,2 @@
 # scorekeeper
-practising JS in combination with HTML, CSS
+practicing JS in combination with HTML, CSS
